@@ -1,0 +1,20 @@
+<IfModule mod_rewrite.c>
+RewriteEngine on
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME}.php -f
+RewriteRule ^(.*)$ $1.php
+</IfModule>
+
+<IfModule mod_rewrite.c>
+Options +FollowSymLinks
+RewriteEngine on
+RewriteCond %{REQUEST_URI} !(.*)View
+RewriteRule ^(.*)$ View/$1 [L]
+</IfModule>
+
+ErrorDocument 404 http://localhost/AndroidWebService/error/404
+IndexIgnore *
+
+RewriteEngine On
+        RewriteCond %{HTTP_HOST} ^localhost$
+        RewriteRule ^$ http://localhost/AndroidWebService/login [L,R=301]

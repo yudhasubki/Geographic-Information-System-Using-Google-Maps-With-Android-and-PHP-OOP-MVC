@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="headerColor">#f2ea46</color>
+    <color name="layout">#f9f9f9</color>
+    <color name="colorEditText">#823f51b5</color>
+    <color name="colorBackground">#c4020518</color>
+    <color name="colorHint">#e57e8fdf</color>
+    <color name="colorBox">#3b7e8fdf</color>
+    <color name="colorToolbar">#2c2e39</color>
+    <color name="colorBack">#da2c2e39</color>
+</resources>

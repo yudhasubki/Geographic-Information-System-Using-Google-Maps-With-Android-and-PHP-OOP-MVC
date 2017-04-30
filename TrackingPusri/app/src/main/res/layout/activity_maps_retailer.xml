@@ -1,0 +1,126 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.yudhaiskandar.trackingpusri.MapsRetailer"
+    android:orientation="vertical"
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorToolbar"
+        >
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                >
+                <include
+                    android:id="@+id/toolbar"
+                    layout="@layout/toolbar"
+                    />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    >
+                    <AutoCompleteTextView
+                        android:hint="kode..."
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:id="@+id/autoCompleteTextView"
+                        android:layout_weight="1"
+                        android:background="@drawable/etbackground"
+                        android:textColorHint="#fff"
+                        android:padding="10dp"
+                        android:textColor="#fff"
+                        />
+
+                    <ImageButton
+                                android:src="@drawable/ic_search"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/cari"
+                                android:layout_weight="6"
+                                android:padding="12dp"
+                                android:background="@drawable/etbackground"
+                                />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    >
+
+
+                    <!-- Distance -->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_weight="1"
+                        >
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/ic_map"
+                            android:layout_gravity="center"
+                            android:tint="#fff"
+                            />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_weight="1"
+                            android:layout_height="wrap_content"
+                            android:textColor="#fff"
+                            android:id="@+id/jarakMobil"
+                            android:gravity="center"
+                            android:textStyle="bold"
+                            />
+                    </LinearLayout>
+
+                    <!-- Waktu -->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_weight="1"
+                        >
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/ic_access_time"
+                            android:layout_gravity="center"
+                            android:tint="#fff"
+                            />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_weight="1"
+                            android:layout_height="wrap_content"
+                            android:textColor="#fff"
+                            android:id="@+id/waktu"
+                            android:gravity="center"
+                            android:textStyle="bold"
+                            />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+    </LinearLayout>
+
+
+    <fragment
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/map"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:orientation="vertical">
+
+    </fragment>
+
+</LinearLayout>
